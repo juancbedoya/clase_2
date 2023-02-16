@@ -1,17 +1,13 @@
 const { totalmem } = require("os");
 
 let memoriaDisponible=freemem=>{
-    let bitagb= 0.000000000125*freemem;
-    let decimal=bitagb.toFixed(7);
-
-    return parseFloat(decimal);
+    let byteagb=1e-9*freemem;
+    return byteagb;
 }
 
 let totalmemr=totalmem=>{
-    let bitagb= 0.000000000125*totalmem;
-    let decimal=bitagb.toFixed(8);
-
-    return parseFloat(decimal);
+    let byteagb=1e-9*totalmem;
+    return byteagb ;
 
 }
 
